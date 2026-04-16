@@ -1,0 +1,14 @@
+---
+- name: Jenkins Ansible Demo
+  hosts: local
+  tasks:
+    - name: Create a file
+      file:
+        path: /tmp/jenkins_file.txt
+        state: touch
+
+    - name: Print message
+      debug:
+        msg: "Ansible executed successfully via Jenkins"
+
+        
